@@ -27,7 +27,7 @@ export default function Auth() {
   const getAuthFromCache = async () => {
     try {
       const cachedAuth = await AsyncStorage.getItem("auth");
-      // console.log("auth", JSON.parse(cachedAuth));
+      console.log("auth", JSON.parse(cachedAuth));
       return JSON.parse(cachedAuth);
     } catch (e) {
       // saving error
