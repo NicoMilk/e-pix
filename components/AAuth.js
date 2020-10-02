@@ -14,6 +14,8 @@ export default function AAuth() {
     })();
   }, []);
 
+
+
   return (
     <View style={styles.container}>
       <Text>Expo AppAuth Example</Text>
@@ -102,3 +104,4 @@ export async function signOutAsync({ accessToken }) {
     alert(`Failed to revoke token: ${e.message}`);
   }
 }
+
